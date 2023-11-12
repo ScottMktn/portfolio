@@ -58,9 +58,9 @@ export default function Home() {
               <h2 className="text-xl sm:text-3xl font-semibold text-gray-300 leading-8 sm:leading-10 ">
                 Building{" "}
                 <span className="text-gray-900">Helicone (YC W23)</span> - open
-                source observability platform for LLM's. With only{" "}
+                source observability platform for LLM&apos;s. With only{" "}
                 <span className="text-gray-900">one line of code</span>, easily
-                monitor your application's performance, health, and user
+                monitor your application&apos;s performance, health, and user
                 behavior.
               </h2>
             </div>
