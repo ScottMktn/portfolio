@@ -1,56 +1,63 @@
-import Image from "next/image";
-import { Inter } from "next/font/google";
 import Link from "next/link";
-
-const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
   return (
-    <main className="min-h-screen bg-slate-400">
-      <div className="max-w-2xl mx-auto justify-center text-left py-36">
-        <div className="sm:border-l-2 border-slate-900 flex flex-col space-y-8 px-4 sm:pl-16">
-          <h1 className="text-2xl font-semibold">
-            My name is <span>Scott Nguyen</span>
-          </h1>
-          <p className="text-lg">
-            I&apos;m a founder, engineer, and sports fan.
-          </p>
-          <section id="background" className="flex flex-col space-y-4">
-            <h2 className="text-lg font-semibold">Background</h2>
-            <ul className="list-disc pl-8 space-y-1">
-              <li>Originally from Everett, Massachusetts</li>
-              <li>Graduated from Northeastern University</li>
-              <li>Previously at DraftKings, Tesla, and Bain Capital</li>
-              <li>Currently in San Francisco, California</li>
+    <div className="bg-gray-100 h-screen">
+      <div className="w-full mx-auto max-w-3xl border-l border-r border-gray-300 flex flex-col divide-y divide-gray-300">
+        <h1 className="text-6xl text-gray-300 p-8 leading-tight">
+          Hello! My name is <span className="text-gray-900">Scott Nguyen</span>.{" "}
+          I am a founder and software engineer.
+        </h1>
+        <section
+          id="current"
+          className="grid grid-cols-3 divide-x divide-gray-300"
+        >
+          <div className="col-span-1 h-full items-center justify-center flex flex-col p-4">
+            <p className="text-sm text-gray-300">Location</p>
+            <p className="text-lg text-gray-900 font-semibold">
+              San Francisco, California
+            </p>
+          </div>
+          <div className="col-span-1 h-full items-center justify-center flex flex-col p-4">
+            <p className="text-sm text-gray-300">Working</p>
+            <p className="text-lg text-gray-900 font-semibold">Helicone</p>
+          </div>
+          <div className="col-span-1 h-full items-center justify-center flex flex-col p-4">
+            <p className="text-sm text-gray-300">Playing</p>
+            <p className="text-lg text-gray-900 font-semibold">Basketball</p>
+          </div>
+        </section>
+        <section
+          id="experience"
+          className="flex flex-row divide-x divide-gray-300"
+        >
+          <div className="flex flex-col space-y-4 p-8 w-full">
+            <h2 className="text-3xl font-semibold text-gray-900">Previously</h2>
+            <ul className="space-y-4 flex flex-col text-gray-300 text-md font-semibold">
+              <li>
+                Born and raised in <span className="text-gray-900">Boston</span>
+              </li>
+              <li>
+                Worked at <span className="text-gray-900">Tesla</span>,{" "}
+                <span className="text-gray-900">DraftKings</span>, and{" "}
+                <span className="text-gray-900">Bain Capital</span>
+              </li>
+              <li>
+                Graduated from{" "}
+                <span className="text-gray-900">Northeastern University</span>
+              </li>
             </ul>
-          </section>
-          <section id="current" className="flex flex-col space-y-4">
-            <h2 className="text-lg font-semibold">What I&apos;m up to</h2>
-            <ul className="list-disc pl-8 space-y-1">
-              <li>
-                Building{" "}
-                <Link
-                  href="https://www.helicone.ai"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="font-semibold underline text-blue-700"
-                >
-                  Helicone.ai (YC W23)
-                </Link>{" "}
-                - open-source monitoring for Large-Language Models
-              </li>
-              <li>
-                Looking to attend meetups and events in the Bay Area - hmu at
-                scott@helicone.ai
-              </li>
-              <li>Watching the Celtics, Patriots, Chelsea, and Sentinels</li>
-              <li>
-                Currently a 3.0 in tennis, trying to win a USTA 3.5 tournament
-              </li>
-            </ul>
-          </section>
-        </div>
+          </div>
+        </section>
+        <section id="helicone" className="p-8">
+          <h2 className="text-3xl font-semibold text-gray-300 leading-10">
+            Building <span className="text-gray-900">Helicone (YC W23)</span> -
+            open source observability platform for LLM's. With only{" "}
+            <span className="text-gray-900">one line of code</span>, easily
+            monitor your application's performance, health, and user behavior.
+          </h2>
+        </section>
       </div>
-    </main>
+    </div>
   );
 }
