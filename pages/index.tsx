@@ -3,7 +3,7 @@ import Link from "next/link";
 export default function Home() {
   return (
     <div className="bg-gray-100 min-h-screen h-full">
-      <div className="w-full mx-auto max-w-3xl border-l border-r border-gray-300 flex flex-col divide-y divide-gray-300">
+      <div className="min-h-screen h-full w-full mx-auto max-w-3xl border-l border-r border-gray-300 flex flex-col divide-y divide-gray-300">
         <h1 className="text-4xl sm:text-6xl text-gray-300 p-8 leading-tight">
           Hello! My name is <span className="text-gray-900">Scott Nguyen</span>.{" "}
           I am a founder and software engineer.
@@ -52,13 +52,19 @@ export default function Home() {
             </ul>
           </div>
         </section>
-        <section id="helicone" className="p-8">
-          <h2 className="text-xl sm:text-3xl font-semibold text-gray-300 leading-8 sm:leading-10">
-            Building <span className="text-gray-900">Helicone (YC W23)</span> -
-            open source observability platform for LLM's. With only{" "}
-            <span className="text-gray-900">one line of code</span>, easily
-            monitor your application's performance, health, and user behavior.
-          </h2>
+        <section id="helicone" className="">
+          <div className="border-b border-gray-300">
+            <div className="p-8">
+              <h2 className="text-xl sm:text-3xl font-semibold text-gray-300 leading-8 sm:leading-10 ">
+                Building{" "}
+                <span className="text-gray-900">Helicone (YC W23)</span> - open
+                source observability platform for LLM's. With only{" "}
+                <span className="text-gray-900">one line of code</span>, easily
+                monitor your application's performance, health, and user
+                behavior.
+              </h2>
+            </div>
+          </div>
         </section>
       </div>
     </div>
