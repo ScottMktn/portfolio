@@ -2,9 +2,9 @@ import Link from "next/link";
 
 export default function Home() {
   return (
-    <div className="bg-gray-100 h-screen">
+    <div className="bg-gray-100 min-h-screen h-full">
       <div className="w-full mx-auto max-w-3xl border-l border-r border-gray-300 flex flex-col divide-y divide-gray-300">
-        <h1 className="text-6xl text-gray-300 p-8 leading-tight">
+        <h1 className="text-4xl sm:text-6xl text-gray-300 p-8 leading-tight">
           Hello! My name is <span className="text-gray-900">Scott Nguyen</span>.{" "}
           I am a founder and software engineer.
         </h1>
@@ -14,8 +14,11 @@ export default function Home() {
         >
           <div className="col-span-1 h-full items-center justify-center flex flex-col p-4">
             <p className="text-sm text-gray-300">Location</p>
-            <p className="text-lg text-gray-900 font-semibold">
+            <p className="text-lg text-gray-900 font-semibold hidden sm:block">
               San Francisco, California
+            </p>
+            <p className="text-lg text-gray-900 font-semibold block sm:hidden">
+              SF
             </p>
           </div>
           <div className="col-span-1 h-full items-center justify-center flex flex-col p-4">
@@ -50,7 +53,7 @@ export default function Home() {
           </div>
         </section>
         <section id="helicone" className="p-8">
-          <h2 className="text-3xl font-semibold text-gray-300 leading-10">
+          <h2 className="text-xl sm:text-3xl font-semibold text-gray-300 leading-8 sm:leading-10">
             Building <span className="text-gray-900">Helicone (YC W23)</span> -
             open source observability platform for LLM's. With only{" "}
             <span className="text-gray-900">one line of code</span>, easily
