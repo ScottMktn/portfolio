@@ -29,26 +29,26 @@ const Home = (props: HomeProps) => {
             user-friendly and accessible.
           </p>
           <p className="text-lg font-serif">
-            I am currently building{" "}
+            I am currently building at {" "}
             <a
-              href="https://www.linkedin.com/company/coinbase/"
+              href="https://www.sprx.tax/"
               target="_blank"
               rel="noopener noreferrer"
               className="text-orange-500 font-bold"
             >
-              Helicone.ai (YCW23)
+              SPRX
             </a>{" "}
-            - the LLM-observability platform designed for developers.
+            - the modern way to claim tax credits and incentives.
           </p>
           <p className="text-lg font-serif">
             Previous @{" "}
             <Link
               className="text-orange-500 font-bold underline"
-              href="https://www.candy.com/"
+              href="https://www.helicone.ai/"
               target="_blank"
               rel="noopener noreferrer"
             >
-              Candy
+              Helicone (YC W23)
             </Link>
             ,{" "}
             <Link
